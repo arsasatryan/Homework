@@ -34,17 +34,15 @@
 
 // var arr=[[1,2,3],[4,5,6],[7,8,9]]
 // for(i=0;i<arr.length;i++){
-//     if(arr[i]=arr[i][i]){
-//         console.log(arr[i])
+//         console.log(arr[i][i])
 //     }
-// }
+
 
 // var arr=[[1,2,3],[4,5,6],[7,8,9]]
 // for(i=0;i<arr.length;i++){
-//     if(arr[i]=arr[i][i]){
-//         console.log(arr[i])
+//         console.log(arr[i][arr.length-1-i])
 //     }
-// }
+
 
 // var gumar=0
 // var arr=[[1,2,3],[4,5,6],[7,8,9]]
@@ -58,32 +56,29 @@
 // console.log(gumar)
 
 
-// var gumar=0
-// var arr=[[1,2,3],[4,5,6],[7,8,9]]
-// for(i=0;i<arr.length;i++){
-//     if(arr[i]=arr[i][i]){
-//        gumar+=arr[i]
-//     }
-// }
-// var gumar1=0
-// var arr=[[1,2,3],[4,5,6],[7,8,9]]
-// for(i=0;i<arr.length;i++){
-//     if(arr[i]=arr[i][arr.length-1-i]){
-//        gumar1+=arr[i]
-       
-//     }
-// }
-
-// gumar2=(gumar1+gumar)/(arr.length*2)
-// console.log(gumar2)
-
-
-
-var sum=1
-var arr=[[1,2,-3],[4,-7,8],[10,5,6]]
+var gumar=0
+var gumar1=0
+var arr=[[1,2,3],[4,5,6],[7,8,9]]
 for(i=0;i<arr.length;i++){
-    if((arr[i]=arr[i][arr.length-1-i]) && (arr[i] < 0)){
-        sum*=arr[i]
+        switch(arr[i][i]){
+            case arr[i][i]:
+            case arr[i][arr.length-1-i]:  
+       gumar+= arr[i][i]
+        gumar1++
+        break
     }
 }
-console.log(sum)
+console.log(gumar/gumar1)
+
+
+
+
+
+// var sum=1
+// var arr=[[1,2,-3],[4,-7,8],[10,5,6]]
+// for(i=0;i<arr.length;i++){
+//   if(arr[i][arr.length-1-i]< 0){
+//         sum*=arr[i][arr.length-1-i]
+//     }
+// }
+// console.log(sum)
